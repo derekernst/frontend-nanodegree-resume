@@ -11,7 +11,7 @@ var bio = {
     },
     "welcomeMessage": "Hello, I'm Derek!",
     "skills": ["HTML", "CSS", "Javascript"],
-    "bioPic": "./images/image.png"
+    "biopic": "./images/image.png"
 };
 
 bio.display = function() {
@@ -42,8 +42,8 @@ bio.display = function() {
     // var formattedMessage = HTMLwelcomeMsg.replace ("%data%", bio.welcomeMessage);
     // $("#header").append(formattedMessage);
 
-    var formattedbioPic = HTMLbioPic.replace("%data%", bio.bioPic);
-    $("#header").append(formattedbioPic);
+    var formattedbiopic = HTMLbioPic.replace("%data%", bio.biopic);
+    $("#header").append(formattedbiopic);
 
     // Skills
     if (bio.skills.length > 0) {
@@ -155,14 +155,14 @@ education.display = function() {
     }
     if (education.onlineCourse.length > 0) {
         $(".education-entry").append(HTMLonlineClasses);
-        for (var i = 0; i < education.onlineCourse.length; i++) {
-            var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourse[i].title);
+        for (var j = 0; j < education.onlineCourse.length; j++) {
+            var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourse[j].title);
             $(".education-entry:last").append(formattedTitle);
-            var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourse[i].school);
+            var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourse[j].school);
             $(".education-entry:last").append(formattedSchool);
-            var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourse[i].dates);
-            $(".education-entry:last").append(formattedDates);
-            var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourse[i].url);
+            var formattedonlineDates = HTMLonlineDates.replace("%data%", education.onlineCourse[j].dates);
+            $(".education-entry:last").append(formattedonlineDates);
+            var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourse[j].url);
             $(".education-entry:last").append(formattedURL);
         }
     }
