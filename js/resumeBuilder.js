@@ -1,6 +1,5 @@
 var bio = {
     "name": "Derek Ernst",
-    "age": 24,
     "role": "Front-End Web Developer",
     "contacts": {
         "mobile": "416-578-2413",
@@ -126,13 +125,13 @@ var education = {
         "location": "Kingston, ON",
         "degree": "Geological Engineering",
         "majors": ["Geological Engineering"],
-        "dates": "2014",
+        "dates": 2014,
         "url": "www.queensu.ca"
     }],
     "onlineCourse": [{
         "title": "Front-End Nanodegree",
         "school": "Udacity",
-        "dates": "2015",
+        "dates": 2016,
         "url": "www.udacity.com"
     }]
 };
